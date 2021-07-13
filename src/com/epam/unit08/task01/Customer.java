@@ -23,7 +23,7 @@ public class Customer {
         return "ID=" + id + ", LastName=\"" + lastname + '\"' + ", FirstName=\"" + firstname + '\"' + ", Patronymic=\"" + patronymic + '\"' + ", Address=" + address + ", CreditCard №=" + card + ", Bank Account №=" + account + "\"\n";
     }
 
-    public void print() {
+    public void print() {// этот метод тут быть не должен
         System.out.println(toString());
     }
     public void setId(int i) {
@@ -75,4 +75,6 @@ public class Customer {
     public long getBankAccount() {
         return account;
     }
+    
+    //equals, hashCode
 }
